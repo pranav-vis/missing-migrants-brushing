@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Missing Migrants on a Map - Multiple Views with Brushing (done)</title>
+    <style>
+      body {
+  margin: 0;
+  overflow: hidden;
+  font-family: helvetica;
+}
+.marks .land {
+  fill: #C1BAA9;
+}
+.marks .interiors {
+  fill: none;
+  stroke: #C0C0BB;
+}
+.marks circle {
+  fill: #137B80;
+  opacity: 0.3;
+}
+
+.marks .sphere {
+  fill: #FFFFFF;
+}
+.tick text,
+.axisLabel {
+  fill: #635F5D;
+  font-size:0.5em;
+}
+.axisLabel {
+  fill: #635F5D;
+  font-size:0.75em;
+}
+
+.marks .graticules, .tick line {
+  stroke: #ececec;
+}
+
+.mark circle {
+  fill: #688BAB;
+}
+.mark path {
+  fill: none;
+  stroke: #688BAB;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 5;
+}
+
+    </style>
+    <script src="https://unpkg.com/react@16.9.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16.9.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/d3@7.0.1/dist/d3.min.js"></script>
+    <script src="https://unpkg.com/topojson@3.0.2/dist/topojson.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
